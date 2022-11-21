@@ -1,7 +1,0 @@
-{$DOMAIN}:443 {
-    tls {
-        dns cloudflare {$CLOUDFLARE_API_TOKEN}
-    }
-    reverse_proxy localhost:8080
-    reverse_proxy /notifications/hub localhost:3012
-}
